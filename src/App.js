@@ -1,7 +1,18 @@
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Cards from "./components/Cards";
+import Footer from "./components/Footer";
+import "./index.css";
+
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+    <>
+      <div className="bg-gray-950 font-Julius">
+        <Navbar />
+        <Hero />
+        <Cards />
+       <Footer/>
+      </div>
+    </>
+  );
 }

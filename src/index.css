@@ -1,3 +1,72 @@
+/* styles.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  /* navbar */
+  .nav-bar-container {
+    @apply text-white md:rounded-t-md container mx-auto sticky top-0 left-0 right-0 grid  bg-gray-950  bg-opacity-30 md:grid-cols-5 px-5 md:py-3 backdrop-filter backdrop-blur-lg;
+  }
+
+  .logo-div {
+    @apply flex items-center justify-center md:justify-start font-bold text-2xl;
+  }
+
+  .ul-list {
+    @apply flex items-center pt-3 space-x-5 text-sm font-semibold cursor-pointer;
+  }
+
+  .nav-link {
+    @apply hover:border-b-2 hover:border-green-500 pb-1  hidden md:block transition duration-300 ease-in-out border-green-700;
+  }
+
+  .search-div {
+    @apply mx-auto hidden md:block space-x-2 md:pl-5 md:w-10/12 sm:col-span-1 sm:w-8/12 md:col-span-2 py-2;
+  }
+
+  .search-input {
+    @apply placeholder:italic w-full placeholder:text-slate-400 text-black  border items-center flex border outline-none rounded-full px-4 py-2 bg-transparent;
+  }
+
+  .login-div {
+    @apply flex items-center justify-center md:justify-end text-xs pt-2 md:pt-0;
+  }
+
+  .login-btn {
+    @apply hidden md:block font-bold hover:text-white hover:bg-green-400 hover:transition-all transition duration-300 ease-in-out cursor-pointer bg-white text-xs text-black px-4 py-2 rounded-full;
+  }
+
+
+  /* hero */
+  .hero-div {
+    @apply bg-cover bg-center text-center  rounded-b-lg flex justify-center h-96 items-center  bg-gray-950  w-full;
+  }
+
+  .hero-h1 {
+    @apply text-white lg:text-8xl text-6xl font-Julius;
+  }
+
+  .hero-p {
+    @apply text-white opacity-80 font-thin md:pb-1 pt-4;
+  }
+
+
+  /* cards */
+  .card-div {
+    @apply mt-5 container mx-auto flex flex-wrap bg-green-500 rounded-md justify-between items-center gap-y-8 p-8 text-center text-white;
+  }
+
+  .card {
+    @apply bg-indigo-700 h-48 lg:w-72 md:w-80 w-full rounded-md overflow-hidden;
+  }
+
+  /* footer */
+  .footer-div {
+    @apply mt-40 container mx-auto text-center bg-gray-950 rounded-md justify-between items-center gap-y-8 p-8 text-white;
+  }
+
+  .footer-text-div {
+    @apply text-center  border-b-2 pb-3 border-b-gray-800;
+  }
+}
