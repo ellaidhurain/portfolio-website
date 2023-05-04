@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ellaidhurain/portfolio-website/static/css/main.3dc2e761.css",
+    "main.js": "/ellaidhurain/portfolio-website/static/js/main.c4aa8f23.js",
+    "index.html": "/ellaidhurain/portfolio-website/index.html",
+    "main.3dc2e761.css.map": "/ellaidhurain/portfolio-website/static/css/main.3dc2e761.css.map",
+    "main.c4aa8f23.js.map": "/ellaidhurain/portfolio-website/static/js/main.c4aa8f23.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3dc2e761.css",
+    "static/js/main.c4aa8f23.js"
+  ]
+}
